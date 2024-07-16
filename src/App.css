@@ -1,0 +1,1566 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Borel&family=Dancing+Script&family=Indie+Flower&family=Inter&family=Lora&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #fff;
+  color: #232323;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* ?-----------------------For Navbar design---------------------------------? */
+
+nav {
+  max-width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: height 0.2s linear;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 2rem;
+  margin-top: 5px;
+}
+
+nav ul li {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #232323;
+}
+
+nav ul a:last-child {
+  font-size: 25px;
+}
+
+#cartnum {
+  background-color: blue;
+  position: absolute;
+  aspect-ratio: auto;
+  height: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: aliceblue;
+  font-size: 10px;
+  top: 2px;
+  right: 15px;
+}
+
+nav ul li:hover {
+  color: blue;
+}
+
+nav ul li#active {
+  background-color: #232323;
+  color: #fff;
+}
+
+nav img {
+  margin: 0 2rem;
+  aspect-ratio: auto;
+  height: 50px;
+}
+
+nav ul a li label {
+  height: 30px;
+  width: 20px;
+}
+
+nav #collapse a:nth-child(4) li {
+  background-color: blue;
+}
+
+@media (max-width: 800px) {
+  nav.active {
+    height: 240px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  #collapse {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: -32px;
+    padding: 10px 0;
+  }
+  #collapse li {
+    position: relative;
+    justify-content: left;
+    align-items: end;
+    padding: 2px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+}
+
+/* ?---------------------------Home & About component design------------------------------------- */
+
+#home,
+#about {
+  position: relative;
+  min-height: 80vh;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  flex-direction: column;
+}
+
+#welcome {
+  width: 75vw;
+  padding: 20px;
+  display: flex;
+}
+
+#welcome .left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 65%;
+}
+
+#welcome .right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome .left p {
+  position: relative;
+  width: 90%;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+#about #welcome label {
+  font-size: 3rem;
+  line-height: 45px;
+}
+
+#welcome label {
+  font-size: 5rem;
+  line-height: 70px;
+}
+
+#welcome .right {
+  position: relative;
+  padding: 0 10px;
+}
+
+#welcome .right img {
+  position: relative;
+  aspect-ratio: auto;
+  height: 250px;
+  box-shadow: 5px 5px 15px -10px #000;
+  z-index: 1;
+}
+
+#welcome .left button {
+  padding: 10px 20px;
+  background-color: blue;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#welcome .left a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  #about #welcome label {
+    font-size: 2rem;
+  }
+
+  #welcome {
+    width: 90vw;
+  }
+
+  #welcome label {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+
+  #welcome .right img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #welcome {
+    width: 95vw;
+    flex-direction: column-reverse;
+  }
+  #welcome .left {
+    width: 100%;
+    padding: 15px;
+  }
+  #welcome .right img {
+    height: 175px;
+  }
+}
+
+/* ?------------------------------Service Component Design------------------------------*/
+
+#service {
+  position: relative;
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#service #services {
+  width: 75vw;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#services div {
+  margin: 0px 5px;
+}
+
+#service div:where(.firstfirst, .secfirst, .thirdfirst) {
+  margin-bottom: 20px;
+}
+
+#service #services div div {
+  background-color: whitesmoke;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#services div div p {
+  background-color: blue;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+}
+
+#services small {
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  #service #services {
+    width: 95vw;
+  }
+  #service #services div div {
+    padding: 5px;
+  }
+  #services div {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #service #services {
+    flex-direction: column;
+  }
+  #service #services div div {
+    width: 250px;
+  }
+  #service div:where(.firstsec, .secsecond, .thirdsec) {
+    margin-bottom: 20px;
+  }
+}
+
+/* ?--------------------------------Trust Component CSS Design-------------------------------- */
+
+#trusted {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+#trust {
+  width: 75vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#trust p {
+  margin-bottom: 15px;
+}
+
+#trust .company {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#trust .company label {
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  #trust {
+    width: 95vw;
+    padding: 20px 0;
+  }
+  trust .company {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #trust {
+    width: 98vw;
+    padding: 20px 0;
+  }
+  #trust .company {
+    width: 95%;
+  }
+  #trust .company label {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/* ?-------------------------Contact Component Design---------------------------- */
+
+#contacts {
+  position: relative;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+iframe {
+  position: relative;
+  width: 98vw;
+  margin: 80px 0 30px;
+}
+
+#contacts form {
+  width: min(400px, 70vw);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#contacts form div {
+  margin: 5px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#contacts form div :where(input, textarea) {
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #232323;
+}
+
+#contacts form div label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#contacts form div textarea {
+  resize: none;
+  height: 200px;
+}
+
+#contacts form button {
+  padding: 8px 40px;
+  font-size: 18px;
+  margin-top: 10px;
+  border: none;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.namefield input {
+  text-transform: uppercase;
+}
+
+/* ?--------------------------------Footer Design---------------------------------- */
+
+#footer {
+  position: relative;
+  margin-top: 25vh;
+  background-color: rgb(17, 17, 92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gotoshop {
+  position: absolute;
+  top: -15%;
+  padding: 20px 40px;
+  width: min(80vw, 700px);
+  background-color: whitesmoke;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.gotoshop button {
+  padding: 10px;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: blue;
+}
+
+#footer .main {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+  width: min(80vw, 800px);
+  color: #fff;
+}
+
+#footer .main div {
+  margin: 0 20px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+h4 {
+  margin: 10px 0;
+}
+
+.subscribe input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+}
+
+.subscribe button {
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: blue;
+  color: #fff;
+  border: none;
+}
+
+.connect ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.connect ul li {
+  font-size: 20px;
+  margin-right: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.connect ul li a {
+  color: #fff;
+}
+
+.copyright {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  color: #fff;
+}
+
+.copyright .copy {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+hr {
+  width: 95vw;
+}
+
+@media screen and (max-width: 767px) {
+  .copyright .copy {
+    flex-direction: column;
+  }
+
+  #footer .main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .gotoshop {
+    top: -10%;
+  }
+}
+
+/* ?-------------------------Error Page Design--------------------------------------*/
+
+#error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+#error h1 {
+  margin: 10px 0 0;
+}
+
+#error a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#error button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: blue;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: blue;
+}
+
+/* ?-------------------------Feature Product Page Design--------------------------- */
+
+#fproduct {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#featureproduct {
+  position: relative;
+  width: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#featureproduct h2 {
+  line-height: 20px;
+}
+
+.fgallery {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  margin-top: 50px;
+}
+
+.fgallery a {
+  text-decoration: none;
+  color: #232323;
+}
+
+.fgallery .card figure img {
+  position: relative;
+  aspect-ratio: auto;
+  height: 170px;
+  transition: all 0.2s ease;
+}
+
+.fgallery .card::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  transition: all 0.5s 0.1s ease;
+}
+
+.fgallery .card:hover::before {
+  left: 0;
+}
+
+.fgallery .card:hover figure img {
+  transform: scale(1.2);
+}
+
+.fgallery .card,
+.fgallery .card figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.fgallery .card figure figcaption {
+  position: absolute;
+  z-index: 5;
+  top: 10px;
+  right: 10px;
+  padding: 2px 8px;
+  background-color: #fff;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.name-price {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 4px;
+  align-items: center;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .fgallery {
+    max-width: 800px;
+  }
+
+  .fgallery .card figure img {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .fgallery {
+    flex-direction: column;
+    max-width: 300px;
+  }
+}
+
+/* ?------------------------------Single Page Image Portion Gallery Design------------------------------ */
+
+#single {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 40px;
+}
+
+#single #main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+}
+
+#single #left {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+#single #left .all-img {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+#single #left .all-img img {
+  aspect-ratio: auto;
+  height: 100px;
+  margin: 2px 0;
+  cursor: pointer;
+}
+
+#single #left .main-img img {
+  aspect-ratio: auto;
+  height: 200px;
+  cursor: pointer;
+}
+
+#single #right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#single #right #mrp {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+#single #right #deal {
+  margin: 5px 0;
+  font-weight: bold;
+  color: blue;
+}
+
+#single #right ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px 0 5px;
+}
+
+#single #right ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#single #right ul li #icon {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 50%;
+  margin-bottom: 6px;
+}
+
+#single #right hr {
+  position: relative;
+  width: 100%;
+  background-color: #232323;
+  height: 3px;
+}
+
+#single #right :where(#avail, #id, #brand) {
+  margin: 5px 0;
+}
+
+#single #right span {
+  font-weight: bold;
+}
+
+#single #right section {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+#single #right section p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5px;
+}
+
+#single #right section p:first-child {
+  color: rgb(211, 211, 15);
+}
+
+#colors {
+  position: relative;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#colors p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#colors button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  margin: 0 3px;
+  opacity: 0.5;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#colors button:first-child {
+  margin-left: 10px;
+}
+
+#colors .check {
+  color: #fff;
+}
+
+#colors button.active,
+#colors button:hover {
+  opacity: 1;
+}
+
+#cartitem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+#cartitem .item-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 0;
+}
+
+#colors a button {
+  background-color: transparent;
+  opacity: 1;
+  border-radius: 0px;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  background-color: blue;
+}
+
+#colors #cartitem .item-toggle button {
+  background-color: transparent;
+  width: 40px;
+}
+
+#colors #cartitem .item-toggle button:first-child {
+  color: red;
+}
+
+#colors #cartitem .item-toggle button:last-child {
+  color: green;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 767px) {
+  #single #main {
+    width: 85vw;
+  }
+  #single {
+    padding: 5px;
+  }
+  #single #left .all-img img {
+    height: 50px;
+  }
+  #single #left .main-img img {
+    height: 100px;
+  }
+  #single #right {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #single {
+    padding: 20px;
+  }
+  #single #main {
+    flex-direction: column;
+    width: 85vw;
+  }
+  #single #left {
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+  }
+  #single #left .all-img {
+    flex-direction: row;
+  }
+  #single #left .all-img img {
+    height: 50px;
+    padding: 5px;
+  }
+  #single #left .main-img img {
+    height: 100px;
+  }
+  #single #right ul li {
+    text-align: center;
+  }
+}
+
+/* ?----------------------------------Products Page Design CSS----------------------------------- */
+
+#allitems {
+  position: relative;
+  min-height: 120vh;
+  background-color: whitesmoke;
+  padding: 2rem 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#allitems .leftcol {
+  position: relative;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+#allitems .rightcol {
+  position: relative;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#allitems .leftcol div {
+  position: relative;
+  width: 100%;
+}
+
+#allitems .leftcol .search-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#allitems .leftcol .search-box input {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #232323;
+  background-color: transparent;
+}
+
+#allitems .leftcol .catagory {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#allitems .leftcol .catagory ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#allitems .leftcol .catagory ul button {
+  width: auto;
+  position: relative;
+  padding: 3px 0;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+#allitems .leftcol .catagory ul button.active,
+#allitems .leftcol .catagory ul button:hover {
+  font-weight: 600;
+  color: blue;
+}
+
+#allitems .leftcol .company {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+#allitems .leftcol .company select {
+  width: 100%;
+  padding: 5px 0px;
+  border: 1px solid #232323;
+  background: transparent;
+}
+
+#allitems .leftcol .colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#allitems .leftcol .colors .color {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#allitems .leftcol .colors .color button {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  margin-right: 8px;
+  opacity: 0.5;
+}
+
+#allitems .leftcol .colors .color button:not(:first-child) {
+  color: #fff;
+}
+
+#allitems .leftcol .colors .color button.active,
+#allitems .leftcol .colors .color button:hover {
+  opacity: 1;
+}
+
+#allitems .leftcol .price {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+#allitems .leftcol .price label {
+  margin-bottom: 5px;
+}
+
+#allitems .leftcol .price input {
+  width: 100%;
+}
+
+#allitems .leftcol .clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#allitems .leftcol .clear button {
+  padding: 15px;
+  border: none;
+  background-color: blue;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+#allitems .rightcol :where(div, p, select) {
+  position: relative;
+  width: 100%;
+}
+
+#allitems .rightcol .filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+
+#allitems .rightcol .filter .view-type {
+  display: flex;
+  align-items: flex-start;
+}
+
+#allitems .rightcol .filter .view-type button {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  background-color: #fff;
+  margin-right: 8px;
+}
+
+#allitems .rightcol .filter .view-type button.active {
+  background-color: #232323;
+  color: #fff;
+}
+
+#allitems .rightcol .filter .sortitem {
+  background-color: transparent;
+  border: 1px solid #232323;
+  padding: 5px;
+}
+
+#allitems .rightcol .allproduct #gridview {
+  padding: 10px;
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.allproduct #gridview .card figure img {
+  position: relative;
+  aspect-ratio: auto;
+  width: calc(100% / 3);
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.allproduct #gridview .card::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  transition: all 0.5s 0.1s ease;
+}
+
+.allproduct #gridview .card:hover::before {
+  left: 0;
+}
+
+.allproduct #gridview .card:hover figure img {
+  transform: scale(1.2);
+}
+
+.allproduct #gridview .card,
+.allproduct #gridview .card figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.allproduct #gridview .card figure figcaption {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  padding: 2px 8px;
+  background-color: #fff;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #232323;
+}
+
+.allproduct #gridview .name-price {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 4px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.allproduct #listview {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.allproduct #listview .listbox {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid hsl(0, 0%, 14%);
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+.listbox a {
+  text-decoration: none;
+  color: #232323;
+}
+
+.listbox .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listbox .card img {
+  position: relative;
+  aspect-ratio: auto;
+  height: 200px;
+  transition: all 0.2s ease;
+}
+
+.listbox .card::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  transition: all 0.5s 0.1s ease;
+}
+
+.listbox .card:hover::before {
+  left: 0;
+}
+
+.listbox .card:hover img {
+  transform: scale(1.2);
+}
+
+.listbox .card {
+  position: relative;
+  overflow: hidden;
+}
+
+.listbox .name-price {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.listbox .name-price small {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.listbox .name-price a button {
+  padding: 10px;
+  background-color: blue;
+  border: none;
+  color: #fff;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  #allitems .rightcol .allproduct #gridview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #allitems {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #allitems .rightcol .allproduct #gridview {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #allitems {
+    padding: 1rem;
+  }
+  #allitems .leftcol .colors .color button {
+    max-height: 10px;
+    max-width: 10px;
+  }
+  #allitems .leftcol {
+    width: 30vw;
+    margin-right: 20px;
+  }
+  #allitems .rightcol {
+    width: 70vw;
+  }
+}
+
+/* ?----------------------------------Cart Item Designing---------------------------------------- */
+
+#cart {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+#cart a #empty-cart-button {
+  background-color: blue;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  margin-top: 10px;
+}
+
+#cartbody {
+  position: relative;
+  width: 80vw;
+  padding: 10px;
+}
+
+#order-items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+#order-items .label {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0px 10px;
+  gap: 5px;
+  text-align: center;
+}
+
+#order-items hr {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#order-items .items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+#order-items .items #unique-item {
+  position: relative;
+  width: min(1100px, 95vw);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  gap: 5px;
+  justify-items: center;
+}
+
+#order-items .items #unique-item div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#order-items .items #unique-item .details {
+  padding: 5px;
+}
+
+#order-items .items #unique-item .details .details-nc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#order-items .items #unique-item .details .details-nc h5 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#order-items .items #unique-item .details .details-nc h5 button {
+  height: 15px;
+  width: 15px;
+  border: none;
+  border-radius: 50%;
+  margin-left: 4px;
+}
+
+#order-items .items #unique-item .details figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+#order-items .items #unique-item .details figure img {
+  aspect-ratio: auto;
+  height: 50px;
+}
+
+#order-items .ch-cc {
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+#order-items .ch-cc button {
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  background-color: red;
+  color: #fff;
+}
+
+#order-items .ch-cc a button {
+  background-color: blue;
+}
+
+#unique-item .quanity-format #cartitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+#unique-item .quanity-format #cartitem .item-toggle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#unique-item .quanity-format #cartitem .item-toggle button {
+  background-color: transparent;
+  width: 40px;
+  border: none;
+}
+
+#unique-item .quanity-format #cartitem .item-toggle button:first-child {
+  color: red;
+  margin-right: 5px;
+}
+
+#unique-item .quanity-format #cartitem .item-toggle button:last-child {
+  color: green;
+  margin-left: 5px;
+}
+
+#cart #total-price {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+#cart #total-price .total-box {
+  padding: 20px;
+  width: 30%;
+}
+
+#cart #total-price .total-box hr {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#cart #total-price .total-box div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  #cartbody{
+    width: 95vw;
+  }
+  #order-items .label,
+  #order-items .items #unique-item {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  #cart #total-price .total-box{
+    width: 50%;
+  }
+}

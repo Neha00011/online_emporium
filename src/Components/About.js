@@ -3,7 +3,7 @@ import Welcome from "./Welcome";
 
 const About = () => {
   const data = {
-    name: "Neha Ecommerce",
+    name: "Online Emporium",
   };
 
   return (

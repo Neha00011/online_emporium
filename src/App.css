@@ -1259,10 +1259,9 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid hsl(0, 0%, 14%);
   padding: 10px;
   margin-bottom: 10px;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
 }
 
 .listbox a {

@@ -58,7 +58,7 @@ nav ul a:last-child {
 }
 
 #cartnum {
-  background-color: blue;
+  background-color: #947046;
   position: absolute;
   aspect-ratio: auto;
   height: 20px;
@@ -74,7 +74,7 @@ nav ul a:last-child {
 }
 
 nav ul li:hover {
-  color: blue;
+  color: #947046;
 }
 
 nav ul li#active {
@@ -94,7 +94,7 @@ nav ul a li label {
 }
 
 nav #collapse a:nth-child(4) li {
-  background-color: blue;
+  background-color: #947046;
 }
 
 @media (max-width: 800px) {
@@ -190,7 +190,7 @@ nav #collapse a:nth-child(4) li {
 
 #welcome .left button {
   padding: 10px 20px;
-  background-color: blue;
+  background-color: #947046;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -271,7 +271,7 @@ nav #collapse a:nth-child(4) li {
 }
 
 #services div div p {
-  background-color: blue;
+  background-color: #947046;
   height: 40px;
   width: 40px;
   display: flex;
@@ -347,7 +347,7 @@ nav #collapse a:nth-child(4) li {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: blue;
+  background-color: #947046;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -438,7 +438,7 @@ iframe {
   font-size: 18px;
   margin-top: 10px;
   border: none;
-  background-color: blue;
+  background-color: #947046;
   color: #fff;
   cursor: pointer;
 }
@@ -452,7 +452,7 @@ iframe {
 #footer {
   position: relative;
   margin-top: 25vh;
-  background-color: rgb(17, 17, 92);
+  background-color: #bc9262;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -478,7 +478,7 @@ iframe {
   border: none;
   color: #fff;
   cursor: pointer;
-  background-color: blue;
+  background-color: #947046;
 }
 
 #footer .main {
@@ -510,7 +510,7 @@ h4 {
 .subscribe button {
   padding: 10px;
   text-transform: uppercase;
-  background-color: blue;
+  background-color: #947046;
   color: #fff;
   border: none;
 }
@@ -594,7 +594,7 @@ hr {
   margin-top: 20px;
   padding: 10px 20px;
   border: none;
-  background-color: blue;
+  background-color: #947046;
   color: #fff;
 }
 
@@ -605,7 +605,7 @@ hr {
 
 ::-webkit-scrollbar-thumb {
   width: 10px;
-  background-color: blue;
+  background-color: #947046;
 }
 
 /* ?-------------------------Feature Product Page Design--------------------------- */
@@ -779,7 +779,7 @@ hr {
 #single #right #deal {
   margin: 5px 0;
   font-weight: bold;
-  color: blue;
+  color: #947046;
 }
 
 #single #right ul {
@@ -908,7 +908,7 @@ hr {
   width: 120px;
   height: 40px;
   color: #fff;
-  background-color: blue;
+  background-color: #947046;
 }
 
 #colors #cartitem .item-toggle button {
@@ -1050,7 +1050,7 @@ a {
 #allitems .leftcol .catagory ul button.active,
 #allitems .leftcol .catagory ul button:hover {
   font-weight: 600;
-  color: blue;
+  color: #947046;
 }
 
 #allitems .leftcol .company {
@@ -1131,7 +1131,7 @@ a {
 #allitems .leftcol .clear button {
   padding: 15px;
   border: none;
-  background-color: blue;
+  background-color: #947046;
   color: #fff;
 }
 
@@ -1325,7 +1325,7 @@ button {
 
 .listbox .name-price a button {
   padding: 10px;
-  background-color: blue;
+  background-color: #947046;
   border: none;
   color: #fff;
 }
@@ -1372,7 +1372,7 @@ button {
 }
 
 #cart a #empty-cart-button {
-  background-color: blue;
+  background-color: #947046;
   padding: 10px;
   border: none;
   color: #fff;
@@ -1491,7 +1491,7 @@ button {
 }
 
 #order-items .ch-cc a button {
-  background-color: blue;
+  background-color: #947046;
 }
 
 #unique-item .quanity-format #cartitem {
@@ -1552,7 +1552,7 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  #cartbody{
+  #cartbody {
     width: 95vw;
   }
   #order-items .label,
@@ -1560,7 +1560,7 @@ button {
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
   }
-  #cart #total-price .total-box{
+  #cart #total-price .total-box {
     width: 50%;
   }
 }

@@ -56,7 +56,7 @@ const Navbar = () => {
         <Link to="/products">
           <li onClick={handleShow}>Products</li>
         </Link>
-        <Link to="/">
+        <Link to="/login">
           <li id="active" onClick={handleShow}>
             Login
           </li>

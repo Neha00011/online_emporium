@@ -7,18 +7,7 @@ const Footer = () => {
   return (
     <div id="footer">
       <div className="main">
-        <div className="self">
-          <h4>Neha Panda</h4>
-          <p>
-            I am currently a UG IT Student from Jalpaiguri Government
-            Engineering College
-          </p>
-        </div>
-        <div className="subscribe">
-          <h4>Subscribe to get important updates</h4>
-          <input type="email" placeholder="YOUR EMAIL" name="subemail"></input>
-          <button>Subscribe</button>
-        </div>
+        
         <div className="connect">
           <h4>Follow Us</h4>
           <ul>

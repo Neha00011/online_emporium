@@ -12,6 +12,7 @@ import Product from "./Components/Product";
 import Estate from "./Context/Estate";
 import FilterState from "./Context/FilterState";
 import Cartstate from "./Context/Cartstate";
+import Login from "./Components/Login";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Route path="/products" element={<Products />} />
               <Route path="/product/:paramid" element={<Product />} />
               <Route path="/cart" element={<Cart />} />
+              <Route path='/login' element={<Login/>}/>
               <Route path="*" element={<Error />} />
             </Routes>
             <Footer />
